@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name | AI & Full-Stack Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Roboto', sans-serif; margin:0; padding:0; line-height:1.6; color:#333; background:#f9f9f9;}
+    header { background:#4B0082; color:white; padding:2rem 1rem; text-align:center;}
+    header h1 { margin:0; font-size:2.5rem;}
+    header p { margin:0.5rem 0 0; font-size:1.2rem;}
+    nav { text-align:center; margin:1rem 0;}
+    nav a { margin:0 1rem; text-decoration:none; color:#4B0082; font-weight:500;}
+    section { padding:3rem 1rem; max-width:1000px; margin:0 auto;}
+    h2 { color:#4B0082; margin-bottom:1rem; }
+    .skills, .projects, .experience { display:flex; flex-wrap:wrap; gap:1rem;}
+    .card { background:white; padding:1.5rem; border-radius:8px; box-shadow:0 4px 6px rgba(0,0,0,0.1); flex:1 1 300px;}
+    a.button { display:inline-block; margin-top:0.5rem; padding:0.5rem 1rem; background:#4B0082; color:white; border-radius:5px; text-decoration:none;}
+    footer { text-align:center; padding:1rem; background:#eee; margin-top:2rem;}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Your Name</h1>
+  <p>AI/ML & Full-Stack Developer | Building Intelligent & Scalable Systems</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#experience">Experience</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>I am an AI/ML and Full-Stack Developer with hands-on experience in Python, Flask, Angular, and database systems. I enjoy building scalable, modular, and interactive platforms that solve real-world problems.</p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="card">Python, Java, SQL</div>
+    <div class="card">Flask, Angular, HTML/CSS/JS</div>
+    <div class="card">PyTorch, TensorFlow, OpenAI API</div>
+    <div class="card">MongoDB, Firebase, REST APIs</div>
+    <div class="card">AI/ML Pipelines, RAG, NLP</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="card">
+      <h3>Tutor-Rag-Voice-Assistant</h3>
+      <p>Voice-controlled AI tutor using RAG, speech recognition, and text-to-speech for AI/ML topics.</p>
+      <a href="https://github.com/FaizanMajeed112/Tutor-Rag-Voice-Assistant" class="button" target="_blank">View Project</a>
+    </div>
+    <div class="card">
+      <h3>AI-Based Pet Breed Recognition</h3>
+      <p>Full-stack platform using ResNet-50 for breed detection, e-commerce, and recommendation services.</p>
+      <a href="#" class="button">View Project</a>
+    </div>
+    <!-- Add more projects as needed -->
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="experience">
+    <div class="card">
+      <h3>DevelopersHub Corporation</h3>
+      <p>AI/ML Engineering Intern – Developed ML pipelines, BERT classifiers, and LLM-based chatbots.</p>
+    </div>
+    <div class="card">
+      <h3>Digicon Valley</h3>
+      <p>Data Science Intern – Worked on classification pipelines and model optimization for datasets.</p>
+    </div>
+    <!-- Add more experiences -->
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: your.email@example.com</p>
+  <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+  <p>GitHub: <a href="https://github.com/yourgithub" target="_blank">github.com/yourgithub</a></p>
+</section>
+
+<footer>
+  <p>&copy; 2026 Your Name. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
