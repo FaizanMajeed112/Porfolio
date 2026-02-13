@@ -1,97 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name | AI & Full-Stack Developer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Roboto', sans-serif; margin:0; padding:0; line-height:1.6; color:#333; background:#f9f9f9;}
-    header { background:#4B0082; color:white; padding:2rem 1rem; text-align:center;}
-    header h1 { margin:0; font-size:2.5rem;}
-    header p { margin:0.5rem 0 0; font-size:1.2rem;}
-    nav { text-align:center; margin:1rem 0;}
-    nav a { margin:0 1rem; text-decoration:none; color:#4B0082; font-weight:500;}
-    section { padding:3rem 1rem; max-width:1000px; margin:0 auto;}
-    h2 { color:#4B0082; margin-bottom:1rem; }
-    .skills, .projects, .experience { display:flex; flex-wrap:wrap; gap:1rem;}
-    .card { background:white; padding:1.5rem; border-radius:8px; box-shadow:0 4px 6px rgba(0,0,0,0.1); flex:1 1 300px;}
-    a.button { display:inline-block; margin-top:0.5rem; padding:0.5rem 1rem; background:#4B0082; color:white; border-radius:5px; text-decoration:none;}
-    footer { text-align:center; padding:1rem; background:#eee; margin-top:2rem;}
-  </style>
+    <meta charset="UTF-8">
+    <title>Faizan Majeed | AI/ML Engineer Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
+
 <body>
 
-<header>
-  <h1>Your Name</h1>
-  <p>AI/ML & Full-Stack Developer | Building Intelligent & Scalable Systems</p>
+<!-- ================= HEADER ================= -->
+<header class="header">
+    <nav class="nav">
+        <div class="logo">Faizan Majeed</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 </header>
 
-<nav>
-  <a href="#about">About</a>
-  <a href="#skills">Skills</a>
-  <a href="#projects">Projects</a>
-  <a href="#experience">Experience</a>
-  <a href="#contact">Contact</a>
-</nav>
+<!-- ================= HERO ================= -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Assalamualaikum, I'm <span class="highlight">Faizan Majeed</span></h1>
+        <p class="subtitle">
+            AI/ML Engineer | Computer Vision Enthusiast | Python Developer | Full-Stack Learner
+        </p>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>I am an AI/ML and Full-Stack Developer with hands-on experience in Python, Flask, Angular, and database systems. I enjoy building scalable, modular, and interactive platforms that solve real-world problems.</p>
-</section>
-
-<section id="skills">
-  <h2>Skills</h2>
-  <div class="skills">
-    <div class="card">Python, Java, SQL</div>
-    <div class="card">Flask, Angular, HTML/CSS/JS</div>
-    <div class="card">PyTorch, TensorFlow, OpenAI API</div>
-    <div class="card">MongoDB, Firebase, REST APIs</div>
-    <div class="card">AI/ML Pipelines, RAG, NLP</div>
-  </div>
-</section>
-
-<section id="projects">
-  <h2>Projects</h2>
-  <div class="projects">
-    <div class="card">
-      <h3>Tutor-Rag-Voice-Assistant</h3>
-      <p>Voice-controlled AI tutor using RAG, speech recognition, and text-to-speech for AI/ML topics.</p>
-      <a href="https://github.com/FaizanMajeed112/Tutor-Rag-Voice-Assistant" class="button" target="_blank">View Project</a>
+        <div class="hero-socials">
+            <a href="https://www.linkedin.com/in/fm112" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:faizanmajeed3392@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
     </div>
-    <div class="card">
-      <h3>AI-Based Pet Breed Recognition</h3>
-      <p>Full-stack platform using ResNet-50 for breed detection, e-commerce, and recommendation services.</p>
-      <a href="#" class="button">View Project</a>
-    </div>
-    <!-- Add more projects as needed -->
-  </div>
 </section>
 
-<section id="experience">
-  <h2>Experience</h2>
-  <div class="experience">
-    <div class="card">
-      <h3>DevelopersHub Corporation</h3>
-      <p>AI/ML Engineering Intern – Developed ML pipelines, BERT classifiers, and LLM-based chatbots.</p>
+<!-- ================= ABOUT ================= -->
+<section id="about" class="about">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>
+            AI/ML Engineer and Computer Science undergraduate at Bahria University Lahore, 
+            with hands-on experience in machine learning, deep learning, and computer vision. 
+            I specialize in CNN architectures (ResNet18, ResNet50), Swin Transformer, YOLOv8, 
+            and full-stack AI integration.
+            <br><br>
+            Experienced in classification, regression, feature engineering, and deploying 
+            AI models into real-world applications.
+        </p>
+
+        <h3>Skills</h3>
+        <ul>
+            <li><strong>Programming:</strong> Python, C++, Java</li>
+            <li><strong>AI & ML:</strong> TensorFlow, Keras, CNNs, Transformers, Image Processing</li>
+            <li><strong>Web:</strong> React.js, Angular, HTML, CSS, JavaScript</li>
+            <li><strong>Databases:</strong> MongoDB</li>
+            <li><strong>Tools:</strong> GitHub, Kaggle, Google Colab, PyCharm, VS Code</li>
+        </ul>
     </div>
-    <div class="card">
-      <h3>Digicon Valley</h3>
-      <p>Data Science Intern – Worked on classification pipelines and model optimization for datasets.</p>
-    </div>
-    <!-- Add more experiences -->
-  </div>
 </section>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: your.email@example.com</p>
-  <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
-  <p>GitHub: <a href="https://github.com/yourgithub" target="_blank">github.com/yourgithub</a></p>
+<!-- ================= EDUCATION ================= -->
+<section id="education" class="education">
+    <div class="container">
+        <h2>Education</h2>
+
+        <div class="edu-card">
+            <h3>Bachelor’s in Computer Science</h3>
+            <p>Bahria University, Lahore</p>
+            <span>March 2022 – January 2026</span>
+        </div>
+
+        <div class="edu-card">
+            <h3>FSc Pre-Engineering</h3>
+            <p>Government Degree College</p>
+            <span>2019 – 2021</span>
+        </div>
+
+        <div class="edu-card">
+            <h3>Matric Science</h3>
+            <p>The Educators School</p>
+            <span>2018 – 2019</span>
+        </div>
+    </div>
 </section>
 
-<footer>
-  <p>&copy; 2026 Your Name. All Rights Reserved.</p>
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience" class="experience">
+    <div class="container">
+        <h2>Professional Experience</h2>
+
+        <div class="exp-card">
+            <h3>AI/ML Intern – AS Digitech (Lahore)</h3>
+            <span>July 2025 – September 2025</span>
+            <ul>
+                <li>Developed ML models for classification & regression.</li>
+                <li>Performed EDA, feature engineering, image processing.</li>
+                <li>Worked with CNNs, Transformers & computer vision models.</li>
+                <li>Integrated trained models into production systems.</li>
+            </ul>
+        </div>
+
+        <div class="exp-card">
+            <h3>Web Development Intern – Softrick Solutions (Lahore)</h3>
+            <span>April 2025 – June 2025</span>
+            <ul>
+                <li>Built responsive web interfaces using HTML, CSS, JS.</li>
+                <li>Improved UI/UX and implemented interactive features.</li>
+                <li>Worked with Git version control in team environment.</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="projects">
+    <div class="container">
+        <h2>Projects</h2>
+
+        <div class="project-card">
+            <h3>AI-Based Automated Platform for Pet Breed Recognition (FYP)</h3>
+            <p>
+                Full-stack AI platform for pet breed identification using CNNs and 
+                transfer learning (ResNet18/50, Swin Transformer, YOLOv8).
+            </p>
+            <p><strong>Tech:</strong> React, TensorFlow, Keras, OpenCV, MongoDB</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Tutor RAG Voice Assistant</h3>
+            <p>
+                Built AI-powered Retrieval-Augmented Generation system with voice interaction.
+            </p>
+            <p><strong>Tech:</strong> Python, RAG, LangChain, Machine Learning</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Web-Based Network Security Scanner</h3>
+            <p>
+                Flask-based scanner integrated with Nmap including firewall simulation.
+            </p>
+            <p><strong>Tech:</strong> Python, Flask, Nmap</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Web-Based Text Encryption Tool</h3>
+            <p>
+                Client-side encryption platform supporting multiple algorithms.
+            </p>
+            <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+
+        <p><strong>Phone:</strong> 0320-3070701</p>
+        <p><strong>Email:</strong> faizanmajeed3392@gmail.com</p>
+        <p><strong>LinkedIn:</strong> https://www.linkedin.com/in/fm112</p>
+
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2025 Faizan Majeed. All rights reserved.</p>
+    </div>
 </footer>
 
 </body>
