@@ -4,10 +4,84 @@
     <meta charset="UTF-8">
     <title>Faizan Majeed | AI/ML Engineer Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    
+    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-</head>
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        /* ================= GLOBAL ================= */
+        * { margin:0; padding:0; box-sizing:border-box; font-family: 'Roboto', sans-serif;}
+        body { background:#f0f2f5; color:#333; line-height:1.6; scroll-behavior: smooth;}
+        h1, h2, h3 { font-weight:700; }
+        a { text-decoration:none; color: inherit; }
+
+        /* ================= HEADER ================= */
+        .header { position: fixed; width: 100%; top:0; left:0; background: #fff; box-shadow:0 2px 10px rgba(0,0,0,0.1); z-index:1000;}
+        .nav { display:flex; justify-content: space-between; align-items:center; padding: 1rem 3rem; }
+        .logo { font-size:1.5rem; font-weight:bold; color:#0077ff;}
+        .nav-links { display:flex; gap:2rem; }
+        .nav-links li { list-style:none; }
+        .nav-links a { color:#333; font-weight:500; transition:0.3s;}
+        .nav-links a:hover { color:#0077ff; }
+
+        /* ================= HERO ================= */
+        .hero { min-height:100vh; display:flex; align-items:center; justify-content:center; text-align:center; background: linear-gradient(135deg, #0077ff, #00c6ff); color:#fff; padding:0 1rem;}
+        .hero h1 { font-size:2.5rem; margin-bottom:1rem; animation: fadeInUp 1s ease forwards;}
+        .hero .highlight { color:#ffd700; }
+        .hero .subtitle { font-size:1.2rem; margin-bottom:1.5rem; animation: fadeInUp 1.2s ease forwards; }
+        .hero-socials a { font-size:1.5rem; margin:0 0.5rem; color:#fff; transition:0.3s; display:inline-block; animation: fadeInUp 1.4s ease forwards; }
+        .hero-socials a:hover { color:#ffd700; }
+
+        /* Hero Animations */
+        @keyframes fadeInUp {
+            0% { opacity:0; transform: translateY(20px); }
+            100% { opacity:1; transform: translateY(0); }
+        }
+
+        /* ================= SECTIONS ================= */
+        section { padding:6rem 2rem; }
+        section h2 { text-align:center; font-size:2rem; margin-bottom:2rem; color:#0077ff; position:relative;}
+        section h2::after { content:""; width:60px; height:3px; background:#0077ff; display:block; margin:8px auto 0; border-radius:2px;}
+
+        .container { max-width:1100px; margin:0 auto; }
+
+        /* ================= ABOUT ================= */
+        .about p { max-width:800px; margin:0 auto 2rem; text-align:center; }
+        .about ul { display:flex; flex-wrap:wrap; justify-content:center; gap:1.5rem; }
+        .about ul li { background:#fff; padding:0.8rem 1rem; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1); transition:0.3s; }
+        .about ul li:hover { transform: translateY(-5px); box-shadow:0 10px 20px rgba(0,0,0,0.2); }
+
+        /* ================= EDUCATION / EXPERIENCE ================= */
+        .edu-card, .exp-card { background:#fff; padding:1.5rem; margin-bottom:1.5rem; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1); transition:0.3s; }
+        .edu-card:hover, .exp-card:hover { transform: translateY(-5px); box-shadow:0 10px 20px rgba(0,0,0,0.2); }
+        .edu-card h3, .exp-card h3 { color:#0077ff; margin-bottom:0.5rem; }
+        .edu-card span, .exp-card span { font-size:0.9rem; color:#555; }
+
+        /* ================= PROJECTS ================= */
+        .projects-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:2rem; }
+        .project-card { background:#fff; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1); padding:1.5rem; transition:0.3s; }
+        .project-card:hover { transform: translateY(-5px) scale(1.02); box-shadow:0 15px 25px rgba(0,0,0,0.2); }
+        .project-card h3 { color:#0077ff; margin-bottom:0.5rem; }
+        .project-card p { margin-bottom:0.5rem; }
+
+        /* ================= CONTACT ================= */
+        .contact p { text-align:center; margin-bottom:0.5rem; font-size:1rem; }
+        .contact a { color:#0077ff; }
+
+        /* ================= FOOTER ================= */
+        .footer { background:#0077ff; color:#fff; text-align:center; padding:2rem; }
+
+        /* ================= RESPONSIVE ================= */
+        @media(max-width:768px){
+            .nav { flex-direction: column; gap:1rem; }
+            .nav-links { flex-direction: column; gap:1rem; }
+        }
+    </style>
+</head>
 <body>
 
 <!-- ================= HEADER ================= -->
@@ -29,10 +103,7 @@
 <section id="home" class="hero">
     <div class="hero-content">
         <h1>Assalamualaikum, I'm <span class="highlight">Faizan Majeed</span></h1>
-        <p class="subtitle">
-            AI/ML Engineer | Computer Vision Enthusiast | Python Developer | Full-Stack Learner
-        </p>
-
+        <p class="subtitle">AI/ML Engineer | Computer Vision Enthusiast | Python Developer | Full-Stack Learner</p>
         <div class="hero-socials">
             <a href="https://www.linkedin.com/in/fm112" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank"><i class="fab fa-github"></i></a>
@@ -45,16 +116,11 @@
 <section id="about" class="about">
     <div class="container">
         <h2>About Me</h2>
-        <p>
-            AI/ML Engineer and Computer Science undergraduate at Bahria University Lahore, 
+        <p>AI/ML Engineer and Computer Science undergraduate at Bahria University Lahore, 
             with hands-on experience in machine learning, deep learning, and computer vision. 
             I specialize in CNN architectures (ResNet18, ResNet50), Swin Transformer, YOLOv8, 
-            and full-stack AI integration.
-            <br><br>
-            Experienced in classification, regression, feature engineering, and deploying 
-            AI models into real-world applications.
+            and full-stack AI integration. Experienced in classification, regression, feature engineering, and deploying AI models into real-world applications.
         </p>
-
         <h3>Skills</h3>
         <ul>
             <li><strong>Programming:</strong> Python, C++, Java</li>
@@ -70,19 +136,16 @@
 <section id="education" class="education">
     <div class="container">
         <h2>Education</h2>
-
         <div class="edu-card">
             <h3>Bachelor’s in Computer Science</h3>
             <p>Bahria University, Lahore</p>
             <span>March 2022 – January 2026</span>
         </div>
-
         <div class="edu-card">
             <h3>FSc Pre-Engineering</h3>
             <p>Government Degree College</p>
             <span>2019 – 2021</span>
         </div>
-
         <div class="edu-card">
             <h3>Matric Science</h3>
             <p>The Educators School</p>
@@ -95,7 +158,6 @@
 <section id="experience" class="experience">
     <div class="container">
         <h2>Professional Experience</h2>
-
         <div class="exp-card">
             <h3>AI/ML Intern – AS Digitech (Lahore)</h3>
             <span>July 2025 – September 2025</span>
@@ -106,7 +168,6 @@
                 <li>Integrated trained models into production systems.</li>
             </ul>
         </div>
-
         <div class="exp-card">
             <h3>Web Development Intern – Softrick Solutions (Lahore)</h3>
             <span>April 2025 – June 2025</span>
@@ -116,7 +177,6 @@
                 <li>Worked with Git version control in team environment.</li>
             </ul>
         </div>
-
     </div>
 </section>
 
@@ -124,40 +184,28 @@
 <section id="projects" class="projects">
     <div class="container">
         <h2>Projects</h2>
-
-        <div class="project-card">
-            <h3>AI-Based Automated Platform for Pet Breed Recognition (FYP)</h3>
-            <p>
-                Full-stack AI platform for pet breed identification using CNNs and 
-                transfer learning (ResNet18/50, Swin Transformer, YOLOv8).
-            </p>
-            <p><strong>Tech:</strong> React, TensorFlow, Keras, OpenCV, MongoDB</p>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>AI-Based Automated Platform for Pet Breed Recognition (FYP)</h3>
+                <p>Full-stack AI platform for pet breed identification using CNNs and transfer learning (ResNet18/50, Swin Transformer, YOLOv8).</p>
+                <p><strong>Tech:</strong> React, TensorFlow, Keras, OpenCV, MongoDB</p>
+            </div>
+            <div class="project-card">
+                <h3>Tutor RAG Voice Assistant</h3>
+                <p>Built AI-powered Retrieval-Augmented Generation system with voice interaction.</p>
+                <p><strong>Tech:</strong> Python, RAG, LangChain, Machine Learning</p>
+            </div>
+            <div class="project-card">
+                <h3>Web-Based Network Security Scanner</h3>
+                <p>Flask-based scanner integrated with Nmap including firewall simulation.</p>
+                <p><strong>Tech:</strong> Python, Flask, Nmap</p>
+            </div>
+            <div class="project-card">
+                <h3>Web-Based Text Encryption Tool</h3>
+                <p>Client-side encryption platform supporting multiple algorithms.</p>
+                <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+            </div>
         </div>
-
-        <div class="project-card">
-            <h3>Tutor RAG Voice Assistant</h3>
-            <p>
-                Built AI-powered Retrieval-Augmented Generation system with voice interaction.
-            </p>
-            <p><strong>Tech:</strong> Python, RAG, LangChain, Machine Learning</p>
-        </div>
-
-        <div class="project-card">
-            <h3>Web-Based Network Security Scanner</h3>
-            <p>
-                Flask-based scanner integrated with Nmap including firewall simulation.
-            </p>
-            <p><strong>Tech:</strong> Python, Flask, Nmap</p>
-        </div>
-
-        <div class="project-card">
-            <h3>Web-Based Text Encryption Tool</h3>
-            <p>
-                Client-side encryption platform supporting multiple algorithms.
-            </p>
-            <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
-        </div>
-
     </div>
 </section>
 
@@ -165,11 +213,9 @@
 <section id="contact" class="contact">
     <div class="container">
         <h2>Contact Me</h2>
-
         <p><strong>Phone:</strong> 0320-3070701</p>
         <p><strong>Email:</strong> faizanmajeed3392@gmail.com</p>
-        <p><strong>LinkedIn:</strong> https://www.linkedin.com/in/fm112</p>
-
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/fm112" target="_blank">linkedin.com/in/fm112</a></p>
     </div>
 </section>
 
